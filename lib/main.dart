@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               Column(
                 children: <Widget>[
@@ -24,13 +25,20 @@ class MyApp extends StatelessWidget {
               ),
               Column(
                 children: <Widget>[
-                  Icon(Icons.room),
+                  Icon(Icons.navigation),
                   Container(
-                    child: Text('LOCATION')
+                    child: Text('ROUTE')
                   )
                 ],
               ),
-              Column()
+              Column(
+                children: <Widget>[
+                  Icon(Icons.share),
+                  Container(
+                    child: Text('SHARE')
+                  )
+                ],
+              )
             ],
           ),
         ),
